@@ -1,0 +1,186 @@
+@import url(./reset.css);
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    background-color: #ece6d4;
+    color: #535344;
+}
+
+.menu {
+    padding: 55px 15px;
+    text-align: center;
+}
+
+.menu-list__item {
+    display: inline-block;
+    margin-left: 55px;
+    font-size: 20px;
+}
+
+.menu-list__item:hover a {
+    color: #90814d;
+}
+
+.menu-list__item a:active {
+    color: cadetblue;
+}
+
+.menu-list__item:nth-of-type(3) a:visited {
+    color: rgb(227, 90, 225);
+}
+
+.menu-list__item:nth-of-type(4) a:focus {
+    color: rgb(230, 145, 54);
+}
+
+.menu-list__item:nth-of-type(5) a:focus-visible {
+    color: rgb(230, 107, 160);
+}
+
+.pseudo-element {
+    background-color: #ece6d4;
+}
+
+.pseudo-element h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
+}
+
+h1::before {
+    content: 'before';
+    padding-right: 10px;
+}
+
+h1::after {
+    content: 'after';
+    padding-left: 10px;
+}
+
+.price {
+    max-width: 1180px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.price-list {
+    max-width: 351px;
+    max-height: 626px;
+    padding: 30px;
+}
+
+.price-item {
+    min-height: 32px;
+    color: #252b42;
+    margin-bottom: 19px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+}
+
+.price-list > *:last-child {
+    margin-bottom: 0;
+}
+
+.price-item-green::before {
+    content: url('../images/check.svg');
+    padding-right: 22px;
+    min-height: 32px;
+    vertical-align: middle;
+}
+
+.price-item-grey::before {
+    content: url('../images/check-grey.svg');
+    padding-right: 22px;
+    min-height: 32px;
+    vertical-align: middle;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.games {
+    display: none;
+}
+
+.games:target {
+    display: block;
+}
+
+.games-wrapper {
+    background: url('../images/labirynt.jpg') center / cover no-repeat;
+    width: 800px;
+    height: 1100px;
+    display: inline-block;
+}
+
+.games-level {
+    background-color: orange;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: -25px;
+}
+
+[class*='level-']:not(.level-1) {
+    visibility: hidden;
+}
+
+.games-level:nth-child(even) {
+    width: 245px;
+    height: 65px;
+}
+
+.games-level:nth-child(odd) {
+    width: 45px;
+    height: 140px;
+}
+
+.games-level:hover + div,
+.games-level:hover {
+    visibility: visible;
+}
+
+.games-level:first-of-type {
+    margin-left: 323px;
+    margin-top: 250px;
+}
+
+.games-level:nth-of-type(2) {
+    margin-left: 323px;
+    margin-top: -25px;
+    width: 276px;
+}
+
+.games-level:nth-of-type(3) {
+    margin-left: 554px;
+    height: 215px;
+}
+
+.games-level:nth-of-type(4) {
+    margin-left: 93px;
+    margin-top: -25px;
+    width: 506px;
+}
+
+.games-level:nth-of-type(5) {
+    margin-left: 93px;
+    height: 235px;
+}
+
+.games-level:nth-of-type(6) {
+    width: 153px;
+    margin-left: 93px;
+    margin-top: -42px;
+}
+
+.games-level:last-of-type {
+    margin-left: 201px;
+    height: 55px;
+}
