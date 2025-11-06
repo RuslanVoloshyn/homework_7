@@ -77,9 +77,10 @@ h1::after {
 
 .price-item {
     min-height: 32px;
-    padding-left: 7px 42px;
+    padding-left: 42px;
+    padding-top: 6px;
     color: #252b42;
-    margin-bottom: 19px;
+    margin-bottom: 13px;
     font-size: 14px;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
